@@ -1,6 +1,6 @@
 author: Ashish
 id: kafka-working-with-iceberg-tables
-summary: This is a sample Snowflake Guide
+summary: Through this quickstart guide, you will explore how to ingest data from kafka to Iceberg tables.
 categories: Getting-Started
 environments: web
 status: Published 
@@ -21,50 +21,19 @@ In this post, we will guide you through setting up open-source Kafka on a Mac sy
 - A Snowflake account login with a role that has the `ACCOUNTADMIN` role. 
 
 ### What You’ll Learn 
-- how to set the metadata for a guide (category, author, id, etc)
-- how to set the amount of time each slide will take to finish 
-- how to include code snippets 
-- how to hyperlink items 
-- how to include images 
+- How to setup Kafka locally
+- How to configure snowflake kafka connector for snowpipe streaming
+- How easily schema evolution can be setup for Iceberg tables using snowflake kafka connector
+
 
 ### What You’ll Need 
 - A [GitHub](https://github.com/) Account 
 - [VSCode](https://code.visualstudio.com/download) Installed
-- [NodeJS](https://nodejs.org/en/download/) Installed
-- [GoLang](https://golang.org/doc/install) Installed
 
 ### What You’ll Build 
-- A Snowflake Guide
-
-<!-- ------------------------ -->
-## Metadata Configuration
-Duration: 2
-
-It is important to set the correct metadata for your Snowflake Guide. The metadata contains all the information required for listing and publishing your guide and includes the following:
+- A streaming pipeline through kafka to snowflake iceberg table
 
 
-- **summary**: This is a sample Snowflake Guide 
-  - This should be a short, 1 sentence description of your guide. This will be visible on the main landing page. 
-- **id**: sample 
-  - make sure to match the id here with the name of the file, all one word.
-- **categories**: data-science 
-  - You can have multiple categories, but the first one listed is used for the icon.
-- **environments**: web 
-  - `web` is default. If this will be published for a specific event or  conference, include it here.
-- **status**: Published
-  - (`Draft`, `Published`, `Deprecated`, `Hidden`) to indicate the progress and whether the sfguide is ready to be published. `Hidden` implies the sfguide is for restricted use, should be available only by direct URL, and should not appear on the main landing page.
-- **feedback link**: https://github.com/Snowflake-Labs/sfguides/issues
-- **tags**: Getting Started, Data Science, Twitter 
-  - Add relevant  tags to make your sfguide easily found and SEO friendly.
-- **authors**: Daniel Myers 
-  - Indicate the author(s) of this specific sfguide.
-
----
-
-You can see the source metadata for this guide you are reading now, on [the github repo](https://raw.githubusercontent.com/Snowflake-Labs/sfguides/master/site/sfguides/sample.md).
-
-
-<!-- ------------------------ -->
 ## Creating a Step
 Duration: 2
 
